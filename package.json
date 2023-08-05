@@ -1,0 +1,15 @@
+{
+  "name": "testimonials",
+  "version": "1.0.0",
+  "description": "this is a simple testimonial display",
+  "main": "index.html",
+  "scripts": {
+    "compile": "sass --watch style.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.64.2"
+  }
+}
