@@ -1,0 +1,12 @@
+{
+  "name": "static-job-listing",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "compile": "sass css/styles.scss css/styles.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.64.2"
+  }
+}
