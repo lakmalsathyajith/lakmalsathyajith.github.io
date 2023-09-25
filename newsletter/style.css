@@ -1,0 +1,287 @@
+/* STANDARD RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* APP STYLES */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('assets/fonts/Roboto-Bold.ttf'); 
+  font-weight: 400;
+}
+
+.app {
+  /* width: 1440px; */
+  margin: 0px auto;
+  background-color: hsl(235, 18%, 26%);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+}
+
+.container {
+  padding: 24px;
+  background-color: hsl(0, 0%, 100%);
+  width: 64.45vw;
+  margin: auto;
+  display: flex;
+  height: 59.36vh;
+  border-radius: 28px;
+}
+
+.main-content{
+  width: 35vw;
+  padding: 5.55vh 4.45vw 5.55vh 2.78vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.main-content__heading {
+  font-size: 3.5rem;
+  font-family: 'Roboto-bold';
+  font-weight: 900;
+}
+
+.main-content__list{
+  line-height: 1;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.main-content__list__item{
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.main-content__list__item:before {
+  content: '';
+  background-image: url("assets/images/icon-list.svg");
+  margin-right: 10px;
+  background-color: hsl(4, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content__label {
+  display: block;
+  width: 100%;
+}
+
+.main-content__input {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+  color: hsl(231, 7%, 60%);
+}
+
+.main-content__button {
+  font-family: 'Roboto-bold';
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(234, 29%, 20%);
+  color:hsl(0, 0%, 100%);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.main-content__button:hover {
+  background-image: linear-gradient(to right, #f03768, #f33b5a, #f4424c, #f34a3e, #f1532e);
+}
+
+.main-background{
+  width: 29.5vw;
+}
+.main-background__image{
+  background-image: url("assets/images/illustration-sign-up-desktop.svg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+}
+
+/* SUCCESS MESSAGE STYLES */
+.success {
+  padding: unset;
+  background-color: hsl(0, 0%, 100%);
+  width: 35vw;
+  margin: auto;
+  display: flex;
+  height: 48.15vh;
+  border-radius: 20px;
+}
+
+.success-modal{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 64px;
+}
+
+.success-modal__image{
+  width: 100%;
+}
+
+.success-modal__image img{
+  width: 60px;
+  margin-bottom: 16px;
+}
+
+.success-modal__heading{
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.success-modal__description strong{
+  line-height: 2;
+}
+
+.success-modal__description strong{
+  font-family: 'Roboto-bold';
+}
+
+.success-modal__button {
+  display: block;
+  width: 100%;
+  padding: 18px 12px;
+  background-color: hsl(234, 29%, 20%);
+  color:hsl(0, 0%, 100%);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.success-modal__button:hover {
+  background-image: linear-gradient(to right, #f03768, #f33b5a, #f4424c, #f34a3e, #f1532e);
+}
+
+@media only screen and (max-width: 415px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+    padding: unset;
+    border-radius: unset;
+  }
+
+  .main-content{
+    width: 100%;
+    padding: 40px 24px;
+    align-content: space-between;
+    height: 66.27vh;
+  }
+
+  .main-content__heading {
+    font-size: 2.5rem;
+  }
+
+  .main-background{
+    height: 33.73vh;
+    width: 100%;
+  }
+  .main-background__image{
+    height: 100%;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .success {
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    border-radius: unset;
+  }
+
+  .success-modal{
+    justify-content: center;
+    margin-top: 100px;
+    padding: 24px;
+  }
+
+  .success-modal__image{
+    margin-bottom: 16px;
+  }
+ 
+  
+  .success-modal__heading{
+    margin-bottom: 16px;
+  }
+
+  .success-modal__description {
+    margin-bottom: 16px;
+  }
+  
+  
+  .success-modal__button {
+    margin-top: auto;
+  }
+}
+

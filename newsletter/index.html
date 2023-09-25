@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+  </style>
+  <script type="text/javascript" src="./js/script.js"></script>
+</head>
+
+<body class="app">
+  <div class="container" id="container1">
+    <aside class="main-content" id="main-content">
+      <h1 class="main-content__heading">Stay updated!</h1>
+      <div class="main-content__description">Join 60,000+ product managers receiving monthly updates on:</div>
+      <ul class="main-content__list">
+        <li class="main-content__list__item">Product discovery and building what matters</li>
+        <li class="main-content__list__item">Measuring to ensure updates are a success</li>
+        <li class="main-content__list__item">And much more!</li>
+      </ul>
+      <div class="main-content__label">Email Address</div>
+      <input type="email" id="email" class="main-content__input" placeholder="email@example.com" />
+      <button id="subscribe" class="main-content__button">Subscribe to monthly newsletter</button>
+    </aside>
+    <aside class="main-background">
+      <div class="main-background__image"></div>
+    </aside>
+    <div class="success-modal" id="success-modal" style="display: none;">
+      <div class="success-modal__image">
+        <img src="assets/images/icon-success.svg" alt="" />
+      </div>
+      <h1 class="success-modal__heading">Thanks for subscribing!</h1>
+      <div class="success-modal__description">A confirmation email has been sent to
+        <strong>ash@loremcompany.com</strong>. Please
+        open it
+        and click the button inside to
+        confirm your subscription
+      </div>
+      <button id="submit" class="success-modal__button">Dismiss message</button>
+    </div>
+  </div>
+  <div class="success" id="container2" style="display: none;">
+    <div class="success-modal" id="success-modal">
+      <div class="success-modal__image">
+        <img src="assets/images/icon-success.svg" alt="" />
+      </div>
+      <h1 class="success-modal__heading">Thanks for subscribing!</h1>
+      <div class="success-modal__description">A confirmation email has been sent to
+        <strong>ash@loremcompany.com</strong>. Please
+        open it
+        and click the button inside to
+        confirm your subscription
+      </div>
+      <button id="success" class="success-modal__button">Dismiss message</button>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
